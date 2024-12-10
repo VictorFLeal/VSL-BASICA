@@ -11,15 +11,37 @@ body {
 /* Headline Section */
 .headline {
     position: absolute;
-    top: 00%; /* Ajusta a posição no topo */
-    left: 40%; /* Centraliza horizontalmente */
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta a posição para o centro exato */
     text-align: center; /* Centraliza o texto */
-    font-size: 35px;
+    font-size: 35px; /* Tamanho do texto para desktops */
     color: black; /* Cor do texto */
     padding: 20px;
-    width: 80%; /* Largura da headline */
+    width: 90%; /* Largura adaptativa */
     max-width: 600px; /* Limite máximo de largura */
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Bordas arredondadas */
+    height: 90vh;
 }
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    .headline {
+        font-size: 28px; /* Ajusta o tamanho da fonte */
+        padding: 15px; /* Reduz o padding */
+        width: 95%; /* Garante que ocupa quase toda a largura */
+    }
+}
+
+@media (max-width: 480px) {
+    .headline {
+        font-size: 22px; /* Ajusta ainda mais o tamanho da fonte */
+        padding: 10px; /* Reduz o padding em telas muito pequenas */
+    }
+}
+
 
 .container h2 {
     text-align: center; /* Centraliza o texto do título */
@@ -209,4 +231,29 @@ footer.footer {
     color: white;
     text-align: center;
     padding: 20px 10px;
+}
+
+
+.guarantee {
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 15px; /* Espaçamento interno para criar um "respiro" ao redor do conteúdo */
+    background-color: #f9f9f9; /* Cor de fundo leve (opcional) */
+    border-radius: 8px; /* Bordas arredondadas para um visual mais elegante */
+}
+
+.guarantee h3 {
+    font-size: 1.8rem; /* Ajusta o tamanho da fonte do título */
+    margin-bottom: 15px; /* Espaçamento inferior ao título */
+    font-weight: bold; /* Destaca o título */
+    color: #FF5722; /* Cor do título */
+}
+
+.guarantee .container {
+    max-width: 700px; /* Define uma largura máxima para limitar o texto */
+    margin: 0 auto; /* Centraliza horizontalmente o conteúdo */
+    line-height: 1.6; /* Define um bom espaçamento entre linhas */
+    font-size: 1rem; /* Tamanho da fonte para o texto */
+    font-family: Arial, sans-serif; /* Escolha de uma fonte simples e legível */
+    color: black; /* Cor do texto para leitura agradável */
+    font-weight: b;
 }
