@@ -109,12 +109,20 @@ body {
     transform: scale(0.95); /* Botão encolhe levemente ao clicar */
 }
 
-/* Estilo para os preços */
+/* Estilo para o preço original */
+.promotion {
+    font-size: 1rem; /* Tamanho menor */
+    color: #999; /* Cor mais discreta */
+    text-decoration: line-through; /* Riscado para mostrar que é o preço anterior */
+    margin: 5px 0; /* Espaço entre os preços */
+}
+
+/* Estilo para o preço promocional */
 .price {
-    font-size: 1.2rem; /* Tamanho da fonte */
-    color: #FF5722; /* Cor de destaque para o preço */
-    font-weight: bold; /* Deixa o texto em negrito */
-    margin: 10px 0; /* Espaço entre o preço e os outros elementos */
+    font-size: 1.4rem; /* Tamanho maior para destaque */
+    color: #FF5722; /* Cor chamativa */
+    font-weight: bold; /* Negrito para destaque */
+    margin: 0; /* Remove espaço adicional */
 }
 
 
