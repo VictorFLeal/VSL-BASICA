@@ -113,8 +113,8 @@ body {
 .promotion {
     font-size: 1rem; /* Tamanho menor */
     color: #999; /* Cor mais discreta */
-    text-decoration: line-through; /* Riscado para mostrar que é o preço anterior */
-    margin: 5px 0; /* Espaço entre os preços */
+    text-decoration: line-through; /* Adiciona o efeito riscado */
+    margin: 5px 0; /* Espaço entre o preço original e o preço promocional */
 }
 
 /* Estilo para o preço promocional */
@@ -124,7 +124,6 @@ body {
     font-weight: bold; /* Negrito para destaque */
     margin: 0; /* Remove espaço adicional */
 }
-
 
 .product-grid {
     display: flex;
