@@ -131,6 +131,25 @@ body {
     transform: scale(0.95); /* Botão encolhe levemente ao clicar */
 }
 
+/* Efeito hover nos produtos */
+.product:hover {
+    transform: scale(1.05); /* Amplia ligeiramente o produto */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra para destacar */
+    background-color: #f9f9f9; /* Altera o fundo para uma cor mais clara */
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* Transição suave */
+}
+
+.product:hover img {
+    transform: scale(1.1); /* Amplia a imagem no hover */
+    transition: transform 0.3s ease-in-out; /* Suaviza o efeito da imagem */
+}
+
+.product:hover h3, 
+.product:hover p {
+    color: #FF5722; /* Altera a cor do texto no hover */
+}
+
+
 /* Estilo para o preço original */
 .promotion {
     font-size: 1rem; /* Tamanho menor */
